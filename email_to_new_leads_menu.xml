@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="action_leads_by_email_url" model="ir.actions.act_url">
+                <field name="name">Leads By Email</field>
+                <field name="type">ir.actions.act_url</field>
+                <field name="target">self</field>
+                <field name="url">https://localhost:8069/crm/email_to_new_leads</field>
+        </record>
+       
+    	<menuitem name="Email TO new leads" id="menu_email_to_new_leads" parent="base.menu_sales" sequence="4"
+            	  action="action_leads_by_email_url"/>
+	</data>
+</openerp> 
